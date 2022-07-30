@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color:white;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 55px;
+    position:sticky;
+    top: 0;
+    justify-content: space-between;
+    margin:0;
+    background-color:white;
+    border-bottom: 2px solid rgb(15, 15, 187);
+    overflow: hidden;
+}
+.nav1{
+    width: 40%;
+    padding: 0;
+
+}
+header img{
+    margin: 0 0 0.2vh 1%;
+
+}
+.nav1 ul{
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding:0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav ul li {
+    height: 100%;
+}
+.nav1 ul li a{
+    display: block;
+    padding:20px;
+    margin: 0;
+    font-size:1em;
+    text-decoration: none;
+    color: rgba(217, 157, 45, 0.995);
+}
+.nav1 ul li a.active{
+    background-color:rgba(217, 157, 45, 0.995);
+    color: white;
+}
+.nav1 ul li a:hover:not(.active){
+    background-color:rgba(217, 157, 45, 0.995);
+    color: white;
+    transition-duration: 700ms;
+}
+/*starting div*/
+#startdiv {
+    width: 100%;
+    height: 480px;
+    background-image: url(../../source/image1.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100% ;
+}
+#startdiv >div{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.6);
+}
+#sol {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    font-size: 13px;
+    color: rgb(243, 243, 238);
+    text-align: center; 
+
+} 
+#sol h1{
+    font-size: 32px;
+    color:orange;
+    opacity: 1;
+}
+/*summary section*/
+#sumry1{
+    display: flex;
+    flex-direction: row;
+    background-image:linear-gradient(45deg,blue,orange 70%);
+    height: 400px;
+}
+#main1{
+    width: 50%;
+
+    color: white;
+    padding: 2%;
+    font-size:18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#main1 h2{
+    border-bottom: 4px solid orange;
+    font-size:30 px;
+}
+#main2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+}
+#main2 img{
+    margin:5% 0 5% 0 ;
+    height: 80%;
+    width: 65%;
+    border-radius: 50% 0 0 50% ;
+    border: 5px double rgb(15, 15, 187) ;
+    box-shadow: 5px 5px 10px;
+}
+/*Projects Section*/
+#pro{
+    margin-top: 20px;
+    height: 600px;
+    width: 100%;
+    background-color: white;
+}
+.heading{
+    text-align: left;
+    font-size: 20px;
+    color: orange;
+    padding: 15px 15px 15px 0;
+    border-bottom:5px solid rgb(15, 15, 187)  ;
+    width: fit-content;
+    margin-left: 20px;
+
+}
+#pro>div{
+    height:500px ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#pro>div>div{
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+    margin: 20px;
+    box-shadow: 4px 4px 20px;
+}
+#pro1{
+   
+    background-size: auto 100% ;
+    overflow: hidden;
+    width: 33.33%;
+    margin-right: 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+#pro1 div{
+    height:fit-content;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.405);
+}
+#pro1:hover{
+    width:50% ;
+    transition-duration: 1s;
+}
+/*Sectors section*/
+#sec{
+    text-align: center;
+    background-color: white;
+    font-size: 20px;
+    height:300px;
+
+}
+
+#sec1{
+    width: 50%;
+    height: 100%;
+}
+#sec2{
+    display: flex;
+    justify-content:space-around;
+    margin: 10px 10px 10px 0;
+    width: 50%;
+    height: 100%;
+    background-image:linear-gradient(45deg,blue,orange) ;
+    overflow: hidden;
+   
+}
+#sec2 img{
+    width: 80%;
+    height: 300px;
+    transition-duration: 2000ms;
+    
+}
+#sec>section{
+    display: flex;
+    flex-direction:row;
+    height: 80%;
+}
+
+.grid-con{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    background-color: rgb(15, 15, 187);
+    padding: 0;
+    height: 100%;
+    margin: 10px 0 10px 10px;
+}
+.grid-item1{
+    
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:25px 0 15px 0;
+    border: 1px solid rgb(3, 16, 139);
+}
+.grid-item1:hover{
+    color: orange;
+    background-color: rgba(252, 253, 254, 0.963);
+    transition-duration:600ms ;
+   
+}
+/* footer*/
+footer{
+    background-color: rgb(15, 15, 187);
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    color: white;
+}
+footer>div{
+    width:33.33%;
+    padding-left: 50px;
+}
+footer>div li{
+    padding:10px ;
+    font-size: 15px;
+    color:aliceblue;
+    width: fit-content;
+    display: flex;
+    flex-direction:column;
+}
+footer li div{
+    height: 2px;
+
+}
+footer>div li:hover{
+   color: orange;
+}
+footer >div li:hover div{
+    animation: anim1 500ms linear ;
+    background-color: orange;
+}
+
+footer h1{
+    color: orange;
+    border-bottom: 2px solid orange;
+    width: fit-content;
+    margin-bottom: 20px;
+    font-size:25px ;
+}
+#foot3 div{
+    display: flex;
+    flex-direction:row;
+
+}
+#foot3>div h2{
+    padding: 0px 10px 10px 20px;
+    font-size: 15px;
+}
+
+
+@keyframes anim1{
+    0% {width:0%;}
+    100% {width: 100%;}
+}

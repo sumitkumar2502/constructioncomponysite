@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>gallery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="gall.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="../../source/logo1.jpg" alt="logo" >
+            <div class="nav1">
+                <ul>
+                    <li><a href="../../index.html" >Home</a> </li>
+                    <li><a href="../page4/webuild.html">We build</a> </li>
+                    <li><a href="#" class="active"> Gallary</a></li>
+                    <li><a href="../page2/contactus.html">Contect Us</a> </li>
+                </ul>
+            </div>
+        </header>
+        <section>
+            <div id="slides">
+                <img src="../../source/mining2.jpg" alt="">
+                <img src="../../source/port.jpg" alt="">
+                <img src="../../source/image2.jpg" alt="">
+                <img src="../../source/railway.jpg" alt="">
+            </div>
+            <div id="control">
+                <div>
+                    <h1 id="backword_k" onclick="backword()"><</h1>
+                    <h1 id="forword_k" onclick="forword()">></h1>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <h1 >global Location</h1>
+                <ul style="list-style-type:none;">
+                    <li>Mumbai<div></div></li>
+                    <li>Noida<div></div></li>
+                    <li>Delhi<div></div></li>
+                </ul>
+            </div>
+            <div>
+                <h1>Our Businsses</h1>
+                <ul style="list-style-type:none;">
+                    <li>Buildings<div></div></li>
+                    <li>Minerals & Metals<div></div></li>
+                    <li>Transpotaion Infrastructure<div></div></li>
+                </ul>
+            </div>
+            <div id="foot3">
+                <h1>Contact Us</h1>
+                <div><img src="../../source/loc2.png" style="height:20px ;"><h2>Address:</h2></div>
+                <p style="font-size: 12px;padding:20px;">The Ruby Tower, Unit No-5, 4th Floor, 29 Senapati Bapat Marg, Mumbai, Maharashtra 400028 · ~14.7 km</p>
+                <div><img src="../../source/phone.png" style="height:20px ;"><h2>+91-22-xxxx-xxxx</h2></div>
+                <div><img src="../../source/email.png" style="height:20px ;"><h2>info@xyzbuilder.com</h2></div>
+            </div>
+        </footer>
+        <script>
+            var a=0;
+            function forword(){
+                if(a<3){
+                    document.getElementById("slides").style=" transform: translateX(-"+25*(a+1).toString()+"%);transition-duration: 1s;";
+                    a++;
+                }
+                if(a==3){
+                    document.getElementById("forword_k").style="background-color:grey";
+                }
+                if(a>0){
+                    document.getElementById("backword_k").style="background-color:rgba(255, 166, 0, 0.533)";
+                }
+            }
+            function backword(){
+                if(a>0){
+                    document.getElementById("slides").style=" transform: translateX(-"+(25*(a)-25).toString()+"%);transition-duration: 1s;";
+                    a--;
+                }
+                if(a==0){
+                    document.getElementById("backword_k").style="background-color:grey";
+                }
+                if(a<3){
+                    document.getElementById("forword_k").style="background-color:rgba(255, 166, 0, 0.533)";
+                }
+            }
+
+            
+        </script>
+    </body>
+</html>
